@@ -30,7 +30,7 @@ def index():
         uid = phoneDetails["ID"]
         wallets = database["wallets"]
         try:
-                walletDetails = wallets.find_one({"id":uid})
+                walletDetails = wallets.find_one({"ID":uid})
         except:
                 return "Wallet Address was not found",404
         walletDetails = wallets.find_one({"ID":uid})
