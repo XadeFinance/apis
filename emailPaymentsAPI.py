@@ -21,7 +21,7 @@ def index():
         database = client["xade"]
         users = database["users"]
         try:
-                userDetails = user.find_one({"Email":str(email)})
+                userDetails = users.find_one({"Email":str(email)})
         except:
                 return f"Email Address was not found",404
         userDetails = users.find_one({"Email":str(email)})
