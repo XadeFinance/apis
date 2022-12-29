@@ -14,11 +14,12 @@ def index():
     url = f"https://api-alfajores.celoscan.io/api?module=account&action=tokentx&contractaddress=0x874069fa1eb16d44d622f2e0ca25eea172369bc1&address={address}"
     response = rget(url)
     jsonDocs = loads(response.text)["result"]
-    amtDeposit = 0.0
+    amtDeposit = 0.00
     for doc in jsonDocs:
         if doc["to"] == "0x7765e4256e0dbda401ce64809bab5aefdca40f08":
             amtDeposit = amtDeposit + float(doc["value"])
-    amtDeposit = round(amtDeposit/(10**18),2)
+    if amtDeposit != 0.00:
+        amtDeposit = round(amtDeposit/(10**18),2)
     return str(amtDeposit)
 
 if __name__ == '__main__':
