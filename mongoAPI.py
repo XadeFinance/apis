@@ -88,8 +88,8 @@ class mongoAPI(BaseHTTPRequestHandler):
             # fa2 = open('./logins.log','a')
             # fr2 = open('./logins.log','r').readlines()
 
-            emailChk = users.find_one({"Email":email})
-            if emailChk == None:
+            emailAndLoginChk = users.find_one({"Email":email,"Login Type":login})
+            if emailAndLoginChk == None:
     
     
                 info = {
