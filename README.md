@@ -10,6 +10,7 @@ These are the APIs which are used for the following tasks
 - Finding the wallet address for a corresponding email address
 - Find the username for a corresponding wallet address
 - Fetching the amount deposited by a user to the SabeX Liquidity Pool
+- Fetching a user's transaction history via the Shardeum Explorer API
 
 # Database
 
