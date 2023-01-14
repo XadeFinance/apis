@@ -80,7 +80,6 @@ class mongoAPI(BaseHTTPRequestHandler):
             i = d["id"]
             if login == "jwt":
                 login = "email"
-
             # info2 = f"{email}\n"
             # info3 = f"Email: {email} Login Type: {login}\n"
             # fa = open('.\\emails.log','a')
@@ -88,7 +87,7 @@ class mongoAPI(BaseHTTPRequestHandler):
             # fa2 = open('./logins.log','a')
             # fr2 = open('./logins.log','r').readlines()
 
-            emailChk = users.find_one({"Email":email})
+            emailChk = users.find_one({"Email":email,"Login Type":login})
             if emailChk == None:
     
     
