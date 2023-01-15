@@ -37,7 +37,7 @@ def index():
         return userDetails["Username"],200
 
 @app.route('/shardeum')
-def index():
+def shardeum():
         try:
                 wallet = str(request.args.get("address"))
         except:
