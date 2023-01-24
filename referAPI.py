@@ -15,7 +15,7 @@ app = Flask(__name__)
 def redirect(address):
   address = str(address)
   if match("^0x[a-fA-F0-9]{40}$",address):
-    return redirect(f"https://shardeum.app.xade.finance/register/{str(address}")
+    return redirect(f"https://shardeum.app.xade.finance/register/{str(address)}")
   else:
     return redirect("https://shardeum.app.xade.finance")
   
