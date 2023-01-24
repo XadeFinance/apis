@@ -1,5 +1,4 @@
 from flask import Flask,request,redirect
-from requests import get as rget
 from os import getenv
 from re import match
 from pymongo import MongoClient
@@ -14,6 +13,7 @@ app = Flask(__name__)
 
 @app.route("/<address>")
 def redirect():
+  address = request.view_args['address']
   if match("^0x[a-fA-F0-9]{40}$",address):
     return redirect(f"https://shardeum.app.xade.finance/register/{address}")
   else:
