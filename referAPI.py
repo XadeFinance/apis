@@ -1,6 +1,6 @@
 from flask import Flask,request,redirect
 from requests import get as rget
-from json import loads
+from os import getenv
 from re import match
 from pymongo import MongoClient
 from dotenv import load_dotenv
