@@ -3,6 +3,8 @@ from json import loads
 from pymongo import MongoClient
 from os import getenv
 from dotenv import load_dotenv
+from re import match
+
 load_dotenv()
 
 connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
@@ -86,9 +88,13 @@ class mongoAPI(BaseHTTPRequestHandler):
             # fr = open('.\\emails.log','r').read().split("\n")
             # fa2 = open('./logins.log','a')
             # fr2 = open('./logins.log','r').readlines()
-
+            refer = None
+            if "refer" in d:
+                if match("^0x[a-fA-F0-9]{40}$",d["refer"]):
+                    refer = d["refer"]
+                
             emailAndLoginChk = users.find_one({"Email":email,"Login Type":login})
-            if emailAndLoginChk == None:
+            if emailAndLoginChk == None and refer == None:
     
     
                 info = {
@@ -99,6 +105,18 @@ class mongoAPI(BaseHTTPRequestHandler):
                 }
     
                 x = users.insert_one(info)
+            elif emailAndLoginChk == None and refer != None:
+                info = {
+                    "Email":email,
+                    "Username":name,
+                    "Login Type":login,
+                    "Referral":refer,
+                    "ID":i
+                }
+    
+                x = users.insert_one(info)
+                
+        
 
             # elif info3 not in fr2:
             #         fa2.write(info3)
