@@ -13,11 +13,11 @@ app = Flask(__name__)
 
 @app.route("/<address>")
 def redirect(address):
-  address = str(address)
-  if match("^0x[a-fA-F0-9]{40}$",address):
-    return redirect(f"https://shardeum.app.xade.finance/register/{str(address)}")
-  else:
-    return redirect("https://shardeum.app.xade.finance")
+#   address = str(address)
+#   if match("^0x[a-fA-F0-9]{40}$",address):
+  return redirect(f"https://shardeum.app.xade.finance/register/{str(address)}")
+#   else:
+#     return redirect("https://shardeum.app.xade.finance")
   
 @app.route("/api/<address>")
 def api(address):
