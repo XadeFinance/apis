@@ -93,7 +93,7 @@ class mongoAPI(BaseHTTPRequestHandler):
                 if match("^0x[a-fA-F0-9]{40}$",d["refer"]):
                     referChk = wallets.find_one({"Wallet Address":d["refer"].lower()})
                     if referChk != None:                                
-                        refer = d["refer"]
+                        refer = d["refer"].lower()
                 
             emailAndLoginChk = users.find_one({"Email":email,"Login Type":login})
             if emailAndLoginChk == None and refer == None:
