@@ -15,7 +15,7 @@ app = Flask(__name__)
 # @app.route("/<address>")
 # def redirect(address):
 # #   address = str(address)
-# #   if match("^0x[a-fA-F0-9]{40}$",address):
+# #   
 #   return address
 # #   else:
 # #     
@@ -32,9 +32,13 @@ app = Flask(__name__)
 #       count = count+1
 #     return str(count)
 
-@app.route('/<path_param>')
-def return_path_param(path_param):
-    return redirect(f"https://shardeum.app.xade.finance/{path_param}")
+@app.route('/<addr>')
+def redirAddr(addr):
+  if match("^0x[a-fA-F0-9]{40}$",addr):
+    return redirect(f"https://shardeum.app.xade.finance/register/{addr}")
+  else:
+    return redirect("https://shardeum.app.xade.finance/")
+    
 if __name__ == '__main__':
         app.run('0.0.0.0',8005)
       
