@@ -36,7 +36,7 @@ app = Flask(__name__)
 def return_path_param(path_param):
     return path_param
 if __name__ == '__main__':
-        app.run('127.0.0.1',8005)
+        app.run('0.0.0.0',8005)
       
   
   
