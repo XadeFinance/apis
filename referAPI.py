@@ -12,6 +12,10 @@ print(connection)
 client = MongoClient(connection)
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+  return redirect("https://shardeum.app.xade.finance/")
+
 @app.route('/<addr>')
 def redirAddr(addr):
   if match("^0x[a-fA-F0-9]{40}$",addr):
