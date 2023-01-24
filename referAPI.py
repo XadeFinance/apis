@@ -12,17 +12,17 @@ client = MongoClient(connection)
 app = Flask(__name__)
 
 @app.route("/<address>")
-def redirect():
-  address = request.view_args['address']
+def redirect(address):
+  address = str(address)
   if match("^0x[a-fA-F0-9]{40}$",address):
-    return redirect(f"https://shardeum.app.xade.finance/register/{address}")
+    return redirect(f"https://shardeum.app.xade.finance/register/{str(address}")
   else:
     return redirect("https://shardeum.app.xade.finance")
   
 @app.route("/api/<address>")
-def api():
+def api(address):
   if match("^0x[a-fA-F0-9]{40}$",address):
-    address = address.lower()
+    address = str(address).lower()
     database = client["shardeum"]
     users = database["users"]
     referrals = users.find({"Referral":str(address)})
