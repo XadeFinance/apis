@@ -18,7 +18,7 @@ app = Flask(__name__)
 # #   if match("^0x[a-fA-F0-9]{40}$",address):
 #   return address
 # #   else:
-# #     return redirect("https://shardeum.app.xade.finance")
+# #     
   
 # @app.route("/api/<address>")
 # def api(address):
@@ -34,7 +34,7 @@ app = Flask(__name__)
 
 @app.route('/<path_param>')
 def return_path_param(path_param):
-    return path_param
+    return redirect(f"https://shardeum.app.xade.finance/{path_param}")
 if __name__ == '__main__':
         app.run('0.0.0.0',8005)
       
