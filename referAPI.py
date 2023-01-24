@@ -3,6 +3,7 @@ from os import getenv
 from re import match
 from pymongo import MongoClient
 from dotenv import load_dotenv
+
 load_dotenv()
 
 connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
