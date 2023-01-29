@@ -44,7 +44,7 @@ def getRefers(addr):
     referrals = users.find({"Referral":str(addr)})
     users = ""
     for ref in referrals:
-      users = users + ref["Username"] + " "
+      users = users + ref["Username"] + "\n"
     return str(users)
     
 if __name__ == '__main__':
