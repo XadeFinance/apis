@@ -23,7 +23,7 @@ def redirAddr(addr):
   else:
     return redirect("https://shardeum.app.xade.finance/")
 
-@app.route("/api/<addr>")
+@app.route("/count/<addr>")
 def api(addr):
   if match("^0x[a-fA-F0-9]{40}$",addr):
     addr = str(addr).lower()
@@ -34,6 +34,18 @@ def api(addr):
     for ref in referrals:
       count = count+1
     return str(count)
+
+@app.route("/getRefers/<addr>")
+def api(addr):
+  if match("^0x[a-fA-F0-9]{40}$",addr):
+    addr = str(addr).lower()
+    database = client["shardeum"]
+    users = database["users"]
+    referrals = users.find({"Referral":str(addr)})
+    users = ""
+    for ref in referrals:
+      users = users + ref["Username"] + " "
+    return str(users)
     
 if __name__ == '__main__':
         app.run('127.0.0.1',8005)
