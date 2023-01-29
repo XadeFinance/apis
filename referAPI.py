@@ -24,7 +24,7 @@ def redirAddr(addr):
     return redirect("https://shardeum.app.xade.finance/")
 
 @app.route("/count/<addr>")
-def api(addr):
+def count(addr):
   if match("^0x[a-fA-F0-9]{40}$",addr):
     addr = str(addr).lower()
     database = client["shardeum"]
@@ -36,7 +36,7 @@ def api(addr):
     return str(count)
 
 @app.route("/getRefers/<addr>")
-def api(addr):
+def getRefers(addr):
   if match("^0x[a-fA-F0-9]{40}$",addr):
     addr = str(addr).lower()
     database = client["shardeum"]
