@@ -1,6 +1,7 @@
 from flask import Flask, Response
 from pymongo import MongoClient
 from dotenv import load_dotenv
+from os import getenv
 
 load_dotenv()
 
