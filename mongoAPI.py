@@ -10,7 +10,7 @@ print(connection)
 
 client = MongoClient(connection)
 #client = MongoClient("mongodb://localhost:27017/")
-database = client["xade"]
+database = client["mobile_mainnet"]
 users = database["users"]
 wallets = database["wallets"]
 phones = database["phones"]
@@ -73,7 +73,6 @@ class mongoAPI(BaseHTTPRequestHandler):
 
             email = d["email"]
             name = d["name"]
-            pfp = d["profileImage"]
             verify = d["verifier"]
             i = d["verifierId"]
             login = d["typeOfLogin"]
