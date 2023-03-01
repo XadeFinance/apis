@@ -18,7 +18,7 @@ def index():
                 return "'phone' parameter was not specified",404
         phone = str(request.args.get("phone"))
         #client = MongoClient("mongodb://localhost:27017/")
-        database = client["xade"]
+        database = client["mainnet"]
         phones = database["phones"]
         try:
                 phoneDetails = phones.find_one({"Phone Number":str(phone)})
