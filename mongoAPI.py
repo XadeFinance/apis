@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, redirect
 from json import loads
 from pymongo import MongoClient
 from os import getenv
