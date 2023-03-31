@@ -19,6 +19,7 @@ To store user information, we use MongoDB. It allows us to easily query data, al
 # Team
 
 - Arav Budhiraja (arav06)
+- Arnav Jhajharia (Arnav-Jhajharia)
 
 **Kindly note: We store the basic details of a user for the sole purpose of enabling email and phone number payments**
 
