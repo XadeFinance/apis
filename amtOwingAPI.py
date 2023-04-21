@@ -1,7 +1,7 @@
 from subprocess import check_output
 from flask import Flask, request
 from json import loads
-from smtplib import smtplib
+from smtplib import SMTP_SSL
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
