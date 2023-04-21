@@ -18,7 +18,7 @@ connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
 print(connection)
 
 client = MongoClient(connection)
-db = client["remmitexv2"]
+db = client["remmitex"]
 collection2 = db["mainnet"]
 collection = db["testnet"]
 
