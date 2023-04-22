@@ -370,7 +370,7 @@ def testnetPart1():
     command = ["node", "decrypt.js", v2Key, data]
     decrypted_data = check_output(command)
 
-    obj = json.loads(decrypted_data)
+    obj = loads(decrypted_data)
     senderName = obj.get("senderName")
     receiver = obj.get("receiver")
     amount = obj.get("amount")
@@ -752,7 +752,7 @@ def mainnetPart1():
     command = ["node", "decrypt.js", v2Key, data]
     decrypted_data = check_output(command)
 
-    obj = json.loads(decrypted_data)
+    obj = loads(decrypted_data)
     senderName = obj.get("senderName")
     receiver = obj.get("receiver")
     amount = obj.get("amount")
