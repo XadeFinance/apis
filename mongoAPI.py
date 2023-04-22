@@ -140,9 +140,10 @@ def polygon():
             z = data.split("||")
             adr = z[0].replace("address:","")
             i = z[1].replace("id:","")
+            scw = z[2];
             addrChk = wallets.find_one({"Wallet Address":adr})
             if addrChk == None:
-                x = wallets.insert_one({"Wallet Address":adr,"ID":i})
+                x = wallets.insert_one({"Wallet Address":adr,"ID":i, "scw":scw})
 
         elif data.startswith('{"phone":'):
             p = loads(data)
