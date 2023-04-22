@@ -88,8 +88,8 @@ def polygon():
         walletDetails = wallets.find_one({"ID":uid})
         return walletDetails["Wallet Address"],200
 
-@app.route('/polygonScw')
-def polygon():
+@app.route('/polygonscw')
+def polygonScw():
         try:
                 email = str(request.args.get("email"))
         except:
