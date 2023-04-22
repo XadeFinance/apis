@@ -114,5 +114,21 @@ def polygonScw():
         walletDetails = wallets.find_one({"ID":uid})
         return walletDetails["scw"],200
 
+@app.route('/polygonlogintype')
+def polygonLogintype():
+        try:
+                email = str(request.args.get("email"))
+        except:
+                return "'email' parameter was not specified",404
+        email = str(request.args.get("email"))
+        #client = MongoClient("mongodb://localhost:27017/")
+        database = client["mainnet"]
+        users = database["users"]
+        try:
+                userDetails = users.find_one({"Email":str(email)})
+        except:
+                return f"Email Address was not found",404
+        return userDetails["Login Type"], 200
+
 if __name__ == '__main__':
         app.run('127.0.0.1',8006)
