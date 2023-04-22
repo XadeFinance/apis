@@ -368,7 +368,7 @@ def testnetPart1():
 """
     data = request.get_json()["data"]
     command = ["node", "decrypt.js", v2Key, data]
-    decrypted_data = subprocess.check_output(command)
+    decrypted_data = check_output(command)
 
     obj = json.loads(decrypted_data)
     senderName = obj.get("senderName")
@@ -750,7 +750,7 @@ def mainnetPart1():
 """
     data = request.get_json()["data"]
     command = ["node", "decrypt.js", v2Key, data]
-    decrypted_data = subprocess.check_output(command)
+    decrypted_data = check_output(command)
 
     obj = json.loads(decrypted_data)
     senderName = obj.get("senderName")
