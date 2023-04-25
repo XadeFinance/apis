@@ -34,6 +34,8 @@ def index():
         except:
                 return "Wallet Address was not found",404
         walletDetails = wallets.find_one({"ID":uid})
+        if(walletDetails["scw"]) 
+                return walletDetails["scw"]
         return walletDetails["Wallet Address"],200
 
 @app.route('/shardeum')
