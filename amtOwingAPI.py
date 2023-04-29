@@ -18,7 +18,6 @@ connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
 print(connection)
 
 client = MongoClient(connection)
-
 db = client["remmitex"]
 collection2 = db["mainnet"]
 collection = db["testnet"]
@@ -375,16 +374,16 @@ def testnetPart1():
     senderName = obj.get("senderName")
     receiver = obj.get("receiver")
     amount = obj.get("amount")
-    #timestamp = int(obj.get("timestamp"))
+    timestamp = int(obj.get("timestamp"))
     senderAddr = obj.get("senderAddr")
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
 
-    #dt = datetime.fromtimestamp(timestamp, timezone.utc)
-    #current_dt = datetime.now(timezone.utc)
-    #if dt.date() == current_dt.date() and abs((dt - current_dt).total_seconds()) <= 60:
-    #    print("Timestamp is on today's date and within a minute of the current time")
-    #else:
-    #    return "madarchod", 403
+    dt = datetime.fromtimestamp(timestamp, timezone.utc)
+    current_dt = datetime.now(timezone.utc)
+    if dt.date() == current_dt.date() and abs((dt - current_dt).total_seconds()) <= 60:
+        print("Timestamp is on today's date and within a minute of the current time")
+    else:
+        return "madarchod", 403
 
     msg = MIMEMultipart()
     msg[
@@ -396,7 +395,7 @@ def testnetPart1():
 
     mailserver = SMTP_SSL("smtpout.secureserver.net", 465)
     mailserver.ehlo()
-    mailserver.login("development@xade.finance", password)
+    mailserver.login("development@xade.finance", "Commune_dev2")
 
     mailserver.sendmail("development@xade.finance", receiver, msg.as_string())
 
@@ -778,7 +777,7 @@ def mainnetPart1():
 
     mailserver = SMTP_SSL("smtpout.secureserver.net", 465)
     mailserver.ehlo()
-    mailserver.login("development@xade.finance", password)
+    mailserver.login("development@xade.finance", "Commune_dev2")
 
     mailserver.sendmail("development@xade.finance", receiver, msg.as_string())
 
@@ -791,4 +790,3 @@ def mainnetPart1():
 
 if __name__ == "__main__":
     app.run('127.0.0.1',8010)
-
