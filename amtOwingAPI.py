@@ -396,7 +396,7 @@ def testnetPart1():
 
     mailserver = SMTP_SSL("smtpout.secureserver.net", 465)
     mailserver.ehlo()
-    mailserver.login("development@xade.finance", "Commune_dev2")
+    mailserver.login("development@xade.finance", password)
 
     mailserver.sendmail("development@xade.finance", receiver, msg.as_string())
 
@@ -778,7 +778,7 @@ def mainnetPart1():
 
     mailserver = SMTP_SSL("smtpout.secureserver.net", 465)
     mailserver.ehlo()
-    mailserver.login("development@xade.finance", "Commune_dev2")
+    mailserver.login("development@xade.finance", password)
 
     mailserver.sendmail("development@xade.finance", receiver, msg.as_string())
 
