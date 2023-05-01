@@ -380,7 +380,7 @@ def testnetPart1():
     senderAddr = obj.get("senderAddr")
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
     doc = collection.find_one({"Email": receiver})
-
+    print(doc)
     if doc:
         current_timestamp = doc["Timestamp"]
         diff = abs(current_timestamp - timestamp)
