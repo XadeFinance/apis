@@ -401,7 +401,7 @@ def testnetPart1():
 
     mailserver.quit()
 
-    document = {"Email": receiver, "Amount": amount}
+    document = {"Email": receiver, "Amount": amount, "timestamp": timestamp}
     result = collection.insert_one(document)
 
     return "donezo", 200
