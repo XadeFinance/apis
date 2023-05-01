@@ -370,30 +370,31 @@ def testnetPart1():
     data = request.get_json()["data"]
     command = ["node", "decrypt.js", v2Key, data]
     decrypted_data = check_output(command)
+	
 
     obj = loads(decrypted_data)
     senderName = obj.get("senderName")
     receiver = obj.get("receiver")
-    amount = obj.get("amount")
+    amount = float(obj.get("amount"))
     timestamp = int(obj.get("timestamp"))
     senderAddr = obj.get("senderAddr")
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
-
+	doc = collection.find_one({"Email": receiver})
 #     dt = datetime.fromtimestamp(timestamp, timezone.utc)
 #     current_dt = datetime.now(timezone.utc)
-    current_timestamp = int(time.time() * 1000)  # current timestamp in milliseconds
-    diff = abs(current_timestamp - timestamp)
-    max_diff = 60 * 1000  # maximum difference of 1 minute in milliseconds
-    
-    if diff <= max_diff:
-        print("Timestamp is on today's date and within a minute of the current time")
-    else:
-        return "madarchod", 403
+    if doc:
+		current_timestamp = doc["Timestamp"]
+		diff = abs(current_timestamp - timestamp)
+		max_diff = 60 * 1000  # minimum difference of 1 minute in milliseconds
+		if diff <= max_diff:
+			print("Timestamp is okay")
+		else:
+			return "madarchod", 403
 
     msg = MIMEMultipart()
     msg[
         "Subject"
-    ] = f"{senderName}({senderAddr}) has sent you ${amount} on Polygon Mainnet through Xade"
+    ] = f"{senderName}({senderAddr}) has sent you ${amount} on Polygon Testnet through Xade"
     msg["From"] = "Xade Finance<support@xade.finance>"
     msg["To"] = receiver
     msg.attach(MIMEText(html, "html"))
@@ -405,9 +406,18 @@ def testnetPart1():
     mailserver.sendmail("support@xade.finance", receiver, msg.as_string())
 
     mailserver.quit()
-
-    document = {"Email": receiver, "Amount": amount, "timestamp": timestamp}
-    result = collection.insert_one(document)
+	current_timestamp = int(time.time() * 1000)  # current timestamp in milliseconds
+	if doc:
+		collection.update_one(
+			{"Email": receiver},
+			{"$set": {"Amount": doc["Amount"] + amount, "Timestamp": datetime.datetime.now()}}
+		)
+	# If the document doesn't exist, insert a new document with the email, amount, and timestamp fields
+	else:
+		collection.insert_one(
+			{"Email": email, "Amount": amount, "Timestamp": datetime.datetime.now()}
+		)
+ 
 
     return "donezo", 200
 
