@@ -384,10 +384,10 @@ def testnetPart1():
     if doc:
         current_timestamp = doc["Timestamp"]
         diff = abs(current_timestamp - timestamp)
-	      max_diff = 60 * 1000  # minimum difference of 1 minute in 
-	      if diff <= max_diff:
+        max_diff = 60 * 1000  # minimum difference of 1 minute in 
+        if diff <= max_diff:
 		        print("Timestamp is okay")
-	      else:
+        else:
 		        return "madarchod", 403
     msg = MIMEMultipart()
     msg[
