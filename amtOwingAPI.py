@@ -413,7 +413,7 @@ def testnetPart1():
 
     else:
 	    collection.insert_one(
-		      {"Email": email, "Amount": amount, "timestamp": datetime.datetime.now()}
+		      {"Email": receiver, "Amount": amount, "timestamp": datetime.datetime.now()}
 	    )
 
 
