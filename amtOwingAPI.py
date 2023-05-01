@@ -378,9 +378,13 @@ def testnetPart1():
     senderAddr = obj.get("senderAddr")
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
 
-    dt = datetime.fromtimestamp(timestamp, timezone.utc)
-    current_dt = datetime.now(timezone.utc)
-    if dt.date() == current_dt.date() and abs((dt - current_dt).total_seconds()) <= 60:
+#     dt = datetime.fromtimestamp(timestamp, timezone.utc)
+#     current_dt = datetime.now(timezone.utc)
+    current_timestamp = int(time.time() * 1000)  # current timestamp in milliseconds
+    diff = abs(current_timestamp - timestamp)
+    max_diff = 60 * 1000  # maximum difference of 1 minute in milliseconds
+    
+    if diff <= max_diff:
         print("Timestamp is on today's date and within a minute of the current time")
     else:
         return "madarchod", 403
