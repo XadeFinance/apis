@@ -380,17 +380,15 @@ def testnetPart1():
     senderAddr = obj.get("senderAddr")
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
     doc = collection.find_one({"Email": receiver})
-#     dt = datetime.fromtimestamp(timestamp, timezone.utc)
-#     current_dt = datetime.now(timezone.utc)
+
     if doc:
         current_timestamp = doc["Timestamp"]
         diff = abs(current_timestamp - timestamp)
-	max_diff = 60 * 1000  # minimum difference of 1 minute in milliseconds
-	if diff <= max_diff:
-		print("Timestamp is okay")
-	else:
-		return "madarchod", 403
-
+	      max_diff = 60 * 1000  # minimum difference of 1 minute in 
+	      if diff <= max_diff:
+		        print("Timestamp is okay")
+	      else:
+		        return "madarchod", 403
     msg = MIMEMultipart()
     msg[
         "Subject"
@@ -408,15 +406,15 @@ def testnetPart1():
     mailserver.quit()
     current_timestamp = int(time.time() * 1000)  # current timestamp in milliseconds
     if doc:
-	collection.update_one(
-		{"Email": receiver},
-		{"$set": {"Amount": doc["Amount"] + amount, "Timestamp": datetime.datetime.now()}}
-	)
-	# If the document doesn't exist, insert a new document with the email, amount, and timestamp fields
+	    collection.update_one(
+		      {"Email": receiver},
+		      {"$set": {"Amount": doc["Amount"] + amount, "Timestamp": datetime.datetime.now()}}
+	    )
+
     else:
-	collection.insert_one(
-		{"Email": email, "Amount": amount, "Timestamp": datetime.datetime.now()}
-	)
+	    collection.insert_one(
+		      {"Email": email, "Amount": amount, "Timestamp": datetime.datetime.now()}
+	    )
 
 
     return "donezo", 200
