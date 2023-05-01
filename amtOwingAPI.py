@@ -408,12 +408,12 @@ def testnetPart1():
     if doc:
 	    collection.update_one(
 		      {"Email": receiver},
-		      {"$set": {"Amount": doc.get("Amount") + amount, "timestamp": datetime.datetime.now()}}
+		      {"$set": {"Amount": doc.get("Amount") + amount, "timestamp": current_timestamp}}
 	    )
 
     else:
 	    collection.insert_one(
-		      {"Email": receiver, "Amount": amount, "timestamp": datetime.datetime.now()}
+		      {"Email": receiver, "Amount": amount, "timestamp": current_timestamp}
 	    )
 
 
