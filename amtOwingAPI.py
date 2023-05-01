@@ -382,7 +382,7 @@ def testnetPart1():
     doc = collection.find_one({"Email": receiver})
     print(doc)
     if doc:
-        current_timestamp = doc["Timestamp"]
+        current_timestamp = doc.get("timestamp")
         diff = abs(current_timestamp - timestamp)
         max_diff = 60 * 1000  # minimum difference of 1 minute in 
         if diff <= max_diff:
@@ -408,12 +408,12 @@ def testnetPart1():
     if doc:
 	    collection.update_one(
 		      {"Email": receiver},
-		      {"$set": {"Amount": doc["Amount"] + amount, "Timestamp": datetime.datetime.now()}}
+		      {"$set": {"Amount": doc.get("Amount") + amount, "timestamp": datetime.datetime.now()}}
 	    )
 
     else:
 	    collection.insert_one(
-		      {"Email": email, "Amount": amount, "Timestamp": datetime.datetime.now()}
+		      {"Email": email, "Amount": amount, "timestamp": datetime.datetime.now()}
 	    )
 
 
