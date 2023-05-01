@@ -379,7 +379,7 @@ def testnetPart1():
     timestamp = int(obj.get("timestamp"))
     senderAddr = obj.get("senderAddr")
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
-	doc = collection.find_one({"Email": receiver})
+    doc = collection.find_one({"Email": receiver})
 #     dt = datetime.fromtimestamp(timestamp, timezone.utc)
 #     current_dt = datetime.now(timezone.utc)
     if doc:
