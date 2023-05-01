@@ -383,13 +383,13 @@ def testnetPart1():
 #     dt = datetime.fromtimestamp(timestamp, timezone.utc)
 #     current_dt = datetime.now(timezone.utc)
     if doc:
-	current_timestamp = doc["Timestamp"]
-	diff = abs(current_timestamp - timestamp)
-	max_diff = 60 * 1000  # minimum difference of 1 minute in milliseconds
-	if diff <= max_diff:
-		print("Timestamp is okay")
-	else:
-		return "madarchod", 403
+		current_timestamp = doc["Timestamp"]
+		diff = abs(current_timestamp - timestamp)
+		max_diff = 60 * 1000  # minimum difference of 1 minute in milliseconds
+		if diff <= max_diff:
+			print("Timestamp is okay")
+		else:
+			return "madarchod", 403
 
     msg = MIMEMultipart()
     msg[
@@ -417,7 +417,7 @@ def testnetPart1():
 		collection.insert_one(
 			{"Email": email, "Amount": amount, "Timestamp": datetime.datetime.now()}
 		)
- 
+
 
     return "donezo", 200
 
