@@ -71,7 +71,7 @@ def polygon():
                 return "'email' parameter was not specified",404
         email = str(request.args.get("email"))
         #client = MongoClient("mongodb://localhost:27017/")
-        database = client["mainnet"]
+        database = client["mobile"]
         users = database["users"]
         try:
                 userDetails = users.find_one({"Email":str(email)})
@@ -97,7 +97,7 @@ def polygonScw():
                 return "'email' parameter was not specified",404
         email = str(request.args.get("email"))
         #client = MongoClient("mongodb://localhost:27017/")
-        database = client["mainnet"]
+        database = client["mobile"]
         users = database["users"]
         try:
                 userDetails = users.find_one({"Email":str(email)})
@@ -123,7 +123,7 @@ def polygonLogintype():
                 return "'email' parameter was not specified",404
         email = str(request.args.get("email"))
         #client = MongoClient("mongodb://localhost:27017/")
-        database = client["mainnet"]
+        database = client["mobile"]
         users = database["users"]
         try:
                 userDetails = users.find_one({"Email":str(email)})
