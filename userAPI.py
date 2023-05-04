@@ -10,7 +10,7 @@ print(connection)
 client = MongoClient(connection)
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/polygon')
 def index():
         try:
                 wallet = str(request.args.get("address"))
