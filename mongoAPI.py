@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect
 from json import loads
 from pymongo import MongoClient
-from os import getenv
+from os import getenv,system
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -128,7 +128,7 @@ def shardeum():
 
 @app.route('/polygon', methods=['GET', 'POST'])
 def polygon():
-    database = client["mainnet"]
+    database = client["mobile"]
     users = database["users"]
     wallets = database["wallets"]
     phones = database["phones"]
@@ -143,7 +143,8 @@ def polygon():
             scw = z[2];
             addrChk = wallets.find_one({"Wallet Address":adr})
             if addrChk == None:
-                x = wallets.insert_one({"Wallet Address":adr,"ID":i, "scw":scw})
+                x = wallets.insert_one({"Wallet Address":adr,"ID":i, "SCW Address":scw})
+            print(adr)
 
         elif data.startswith('{"phone":'):
             p = loads(data)
@@ -175,9 +176,22 @@ def polygon():
                     "Login Type":login,
                     "ID":i
                 }
-
+                
+                v2Db = client["remmitex"]
+                testnet = v2Db["testnet"]
+                checkTestnet = testnet.find_one({'Email': email})
+                if checkTestnet:
+                    amount = int(checkTestnet.get("Amount")) * pow(10,18)
+                    checkAddress = wallets.find_one({'ID':i})
+                    if checkAddress:
+                        address = checkAddress.get("SCW Address")
+                        print(address)
+                        print(amount)
+                        system(f"node /home/xade/xade-api/testnetV2.js {address} {amount}") 
+                        deleteDoc = testnet.delete_one({'Email': email})
                 x = users.insert_one(info)
-
+                
+                print(email)
             else:
                 info = "duplicate lol"
 
