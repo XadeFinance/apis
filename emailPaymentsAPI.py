@@ -113,7 +113,7 @@ def polygonScw():
         except:
                 return "Wallet Address was not found",404
         walletDetails = wallets.find_one({"ID":uid})
-        return walletDetails["scw"],200
+        return walletDetails["SCW Address"],200
 
 @app.route('/polygonlogintype')
 def polygonLogintype():
