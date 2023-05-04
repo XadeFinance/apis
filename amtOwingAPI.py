@@ -54,7 +54,7 @@ def testnetPart1():
     ] = f"{senderName}({senderAddr}) has sent you ${amount} on Polygon Testnet through Xade"
     msg["From"] = "Xade Finance<support@xade.finance>"
     msg["To"] = receiver
-     html = f"""\
+    html = f"""\
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
    <head>
