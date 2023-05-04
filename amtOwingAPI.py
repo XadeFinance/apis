@@ -67,33 +67,33 @@ def testnetPart1():
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <style type="text/css">
-         #outlook a {
+         #outlook a {{
          padding: 0;
-         }
-         body {
+         }}
+         body {{
          margin: 0;
          padding: 0;
          -webkit-text-size-adjust: 100%;
          -ms-text-size-adjust: 100%;
-         }
+         }}
          table,
-         td {
+         td {{
          border-collapse: collapse;
          mso-table-lspace: 0pt;
          mso-table-rspace: 0pt;
-         }
-         img {
+         }}
+         img {{
          border: 0;
          height: auto;
          line-height: 100%;
          outline: none;
          text-decoration: none;
          -ms-interpolation-mode: bicubic;
-         }
-         p {
+         }}
+         p {{
          display: block;
          margin: 13px 0;
-         }
+         }}
       </style>
       <!--[if mso]>
       <xml>
@@ -105,7 +105,7 @@ def testnetPart1():
       <![endif]-->
       <!--[if lte mso 11]>
       <style type="text/css">
-         .mj-outlook-group-fix { width:100% !important; }
+         .mj-outlook-group-fix {{ width:100% !important; }}
       </style>
       <![endif]-->
       <!--[if !mso]>
@@ -117,31 +117,31 @@ def testnetPart1():
          <!--
                      <![endif]-->
       <style type="text/css">
-         @media only screen and (min-width:480px) {
-         .mj-column-per-100 {
+         @media only screen and (min-width:480px) {{
+         .mj-column-per-100 {{
          width: 100% !important;
          max-width: 100%;
-         }
-         }
+         }}
+         }}
       </style>
       <style type="text/css">
-         @media only screen and (max-width:480px) {
-         table.mj-full-width-mobile {
+         @media only screen and (max-width:480px) {{
+         table.mj-full-width-mobile {{
          width: 100% !important;
-         }
-         td.mj-full-width-mobile {
+         }}
+         td.mj-full-width-mobile {{
          width: auto !important;
-         }
-         }
+         }}
+         }}
       </style>
       <style type="text/css">
          a,
          span,
          td,
-         th {
+         th {{
          -webkit-font-smoothing: antialiased !important;
          -moz-osx-font-smoothing: grayscale !important;
-         }
+         }}
       </style>
    </head>
    <body style="background-color:#ffffff;" data-new-gr-c-s-check-loaded="14.1104.0" data-gr-ext-installed="">
