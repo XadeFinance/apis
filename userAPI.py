@@ -21,10 +21,10 @@ def index():
         database = client["mobile"]
         wallets = database["wallets"]
         try:
-                walletDetails = wallets.find_one({"SCW Address":str(wallet)})
+                walletDetails = wallets.find_one({"Wallet Address":str(wallet)})
         except:
                 return "wallet address was not found",404
-        walletDetails = wallets.find_one({"SCW Address":str(wallet)})
+        walletDetails = wallets.find_one({"Wallet Address":str(wallet)})
         if walletDetails == None:
             return "wallet address was not found",404
         uid = walletDetails["ID"]
