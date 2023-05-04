@@ -33,10 +33,10 @@ def testnetPart1():
   <head>
     <title> Welcome to Coded Mails </title>
     <!--[if !mso]>
-		<!-- -->
+                <!-- -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--
-		<![endif]-->
+                <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
@@ -73,26 +73,26 @@ def testnetPart1():
       }
     </style>
     <!--[if mso]>
-		<xml>
-			<o:OfficeDocumentSettings>
-				<o:AllowPNG/>
-				<o:PixelsPerInch>96</o:PixelsPerInch>
-			</o:OfficeDocumentSettings>
-		</xml>
-		<![endif]-->
+                <xml>
+                        <o:OfficeDocumentSettings>
+                                <o:AllowPNG/>
+                                <o:PixelsPerInch>96</o:PixelsPerInch>
+                        </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
     <!--[if lte mso 11]>
-		<style type="text/css">
+                <style type="text/css">
           .mj-outlook-group-fix { width:100% !important; }
         </style>
-		<![endif]-->
+                <![endif]-->
     <!--[if !mso]>
-		<!-->
+                <!-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
     </style>
     <!--
-		<![endif]-->
+                <![endif]-->
     <style type="text/css">
       @media only screen and (min-width:480px) {
         .mj-column-per-100 {
@@ -126,24 +126,24 @@ def testnetPart1():
     <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> Tera Baap(0xfb2...Ot5) has sent you $0.69 on Polygon Mainnet through Xade </div>
     <div style="background-color:#ffffff;">
       <!--[if mso | IE]>
-			<table
+                        <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-				<tr>
-					<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-						<![endif]-->
+                                <tr>
+                                        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                <![endif]-->
       <div style="margin:0px auto;max-width:600px;">
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
               <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;text-align:center;">
                 <!--[if mso | IE]>
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-												<tr>
-													<td
+                                                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                        <td
                class="" style="vertical-align:top;width:600px;"
             >
-														<![endif]-->
+                                                                                                                <![endif]-->
                 <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                     <tbody>
@@ -161,16 +161,16 @@ def testnetPart1():
                       <tr>
                         <td style="font-size:0px;word-break:break-word;">
                           <!--[if mso | IE]>
-																			<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-																				<tr>
-																					<td height="20" style="vertical-align:top;height:20px;">
-																						<![endif]-->
+                                                                                                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                                  <tr>
+                                                                                                                                  <td height="20" style="vertical-align:top;height:20px;">
+                                                                                                                                  <![endif]-->
                           <div style="height:20px;"></div>
                           <!--[if mso | IE]>
-																					</td>
-																				</tr>
-																			</table>
-																			<![endif]-->
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </table>
+                                                                                                                                  <![endif]-->
                         </td>
                       </tr>
                       <tr>
@@ -192,37 +192,37 @@ def testnetPart1():
                   </table>
                 </div>
                 <!--[if mso | IE]>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
+                                                                                                        </td>
+                                                                                                </tr>
+                                                                                        </table>
+                                                                                        <![endif]-->
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <!--[if mso | IE]>
-					</td>
-				</tr>
-			</table>
-			<table
+                                        </td>
+                                </tr>
+                        </table>
+                        <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-				<tr>
-					<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-						<![endif]-->
+                                <tr>
+                                        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                <![endif]-->
       <div style="margin:0px auto;max-width:600px;">
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
               <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
                 <!--[if mso | IE]>
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-												<tr>
-													<td
+                                                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                        <td
                class="" style="vertical-align:top;width:600px;"
             >
-														<![endif]-->
+                                                                                                                <![endif]-->
                 <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                     <tbody>
@@ -260,89 +260,88 @@ def testnetPart1():
                   </table>
                 </div>
                 <!--[if mso | IE]>
-															</td>
-														</tr>
-													</table>
-													<![endif]-->
+                                                                                                                        </td>
+                                                                                                                </tr>
+                                                                                                        </table>
+                                                                                                        <![endif]-->
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <!--[if mso | IE]>
-							</td>
-						</tr>
-					</table>
-					<![endif]-->
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <![endif]-->
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fafafa;background-color:#fafafa;width:100%;">
         <tbody>
           <tr>
             <td>
               <!--[if mso | IE]>
-									<table
+                                                                        <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-										<tr>
-											<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-												<![endif]-->
+                                                                                <tr>
+                                                                                        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                                                                <![endif]-->
               <div style="margin:0px auto;max-width:600px;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                   <tbody>
                     <tr>
                       <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
                         <!--[if mso | IE]>
-																	<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-																		<tr>
-																			<td
+                                                                                                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                                  <tr>
+                                                                                                                                  <td
                  class="" width="600px"
               >
-																				<table
+                                                                                                                                  <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-																					<tr>
-																						<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-																							<![endif]-->
+                                                                                                                                  <tr>
+                                                                                                                                  <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                                                                                                  <![endif]-->
                         <div style="margin:0px auto;max-width:600px;">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
-                            <tbody>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">                            <tbody>
                               <tr>
                                 <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
                                   <!--[if mso | IE]>
-																												<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-																													<tr>
-																														<td
+                                                                                                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                                  <tr>
+                                                                                                                                  <td
                class="" style="vertical-align:top;width:600px;"
             >
-																															<![endif]-->
+                                                                                                                                  <![endif]-->
                                   <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                       <tbody>
                                         <tr>
                                           <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                             <!--[if mso | IE]>
-																																				<table
+                                                                                                                                  <table
          align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
       >
-																																					<tr>
-																																						<td>
-																																							<![endif]-->
+                                                                                                                                  <tr>
+                                                                                                                                  <td>
+                                                                                                                                  <![endif]-->
                                             <![endif]-->
-																																						</td>
-																																					</tr>
-																																				</tbody>
-																																			</table>
-																																		</div>
-																																		<!--[if mso | IE]>
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  </div>
+                                                                                                                                  <!--[if mso | IE]>
                                           </td>
                                         </tr>
                                     </table>
                                     <![endif]-->
-																														</td>
-																													</tr>
-																												</tbody>
-																											</table>
-																										</div>
-																										<!--[if mso | IE]>
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  </div>
+                                                                                                                                  <!--[if mso | IE]>
                                 </td>
                               </tr>
                           </table>
@@ -350,27 +349,27 @@ def testnetPart1():
                     </tr>
                 </table>
                 <![endif]-->
-																			</td>
-																		</tr>
-																	</tbody>
-																</table>
-															</div>
-															<!--[if mso | IE]>
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                </table>
+                                                                                                                        </div>
+                                                                                                                        <!--[if mso | IE]>
             </td>
           </tr>
       </table>
       <![endif]-->
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</body>
+                                                                                        </td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                </table>
+                                                        </div>
+                                                </body>
 """
     data = request.get_json()["data"]
-    command = ["node", "decrypt.js", v2Key, data]
+    command = ["node", "/home/xade/xade-api/decrypt.js", v2Key, data]
     decrypted_data = check_output(command)
-	
+
 
     obj = loads(decrypted_data)
     senderName = obj.get("senderName")
@@ -381,14 +380,13 @@ def testnetPart1():
     senderAddr = senderAddr[:5] + "..." + senderAddr[-3:]
     doc = collection.find_one({"Email": receiver})
     print(doc)
-    if doc:
-        current_timestamp = doc.get("timestamp")
-        diff = abs(current_timestamp - timestamp)
-        max_diff = 60 * 1000  # minimum difference of 1 minute in 
-        if diff <= max_diff:
-		        print("Timestamp is okay")
-        else:
-		        return "madarchod", 403
+    current_timestamp = int(time.time() * 1000)
+    diff = abs(current_timestamp - timestamp)
+    max_diff = 60 * 1000  # minimum difference of 1 minute in 
+    if diff <= max_diff:
+        print("Timestamp is okay")
+    else:
+        return "madarchod", 403
     msg = MIMEMultipart()
     msg[
         "Subject"
@@ -406,15 +404,15 @@ def testnetPart1():
     mailserver.quit()
     current_timestamp = int(time.time() * 1000)  # current timestamp in milliseconds
     if doc:
-	    collection.update_one(
-		      {"Email": receiver},
-		      {"$set": {"Amount": doc.get("Amount") + amount, "timestamp": current_timestamp}}
-	    )
+            collection.update_one(
+                      {"Email": receiver},
+                      {"$set": {"Amount": doc.get("Amount") + amount, }}
+            )
 
     else:
-	    collection.insert_one(
-		      {"Email": receiver, "Amount": amount, "timestamp": current_timestamp}
-	    )
+            collection.insert_one(
+                      {"Email": receiver, "Amount": amount}
+            )
 
 
     return "donezo", 200
@@ -427,10 +425,10 @@ def mainnetPart1():
   <head>
     <title> Welcome to Coded Mails </title>
     <!--[if !mso]>
-		<!-- -->
+                <!-- -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--
-		<![endif]-->
+                <![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
@@ -467,26 +465,26 @@ def mainnetPart1():
       }
     </style>
     <!--[if mso]>
-		<xml>
-			<o:OfficeDocumentSettings>
-				<o:AllowPNG/>
-				<o:PixelsPerInch>96</o:PixelsPerInch>
-			</o:OfficeDocumentSettings>
-		</xml>
-		<![endif]-->
+                <xml>
+                        <o:OfficeDocumentSettings>
+                                <o:AllowPNG/>
+                                <o:PixelsPerInch>96</o:PixelsPerInch>
+                        </o:OfficeDocumentSettings>
+                </xml>
+                <![endif]-->
     <!--[if lte mso 11]>
-		<style type="text/css">
+                <style type="text/css">
           .mj-outlook-group-fix { width:100% !important; }
         </style>
-		<![endif]-->
+                <![endif]-->
     <!--[if !mso]>
-		<!-->
+                <!-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
     </style>
     <!--
-		<![endif]-->
+                <![endif]-->
     <style type="text/css">
       @media only screen and (min-width:480px) {
         .mj-column-per-100 {
@@ -520,24 +518,24 @@ def mainnetPart1():
     <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> Tera Baap(0xfb2...Ot5) has sent you $0.69 on Polygon Mainnet through Xade </div>
     <div style="background-color:#ffffff;">
       <!--[if mso | IE]>
-			<table
+                        <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-				<tr>
-					<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-						<![endif]-->
+                                <tr>
+                                        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                <![endif]-->
       <div style="margin:0px auto;max-width:600px;">
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
               <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;text-align:center;">
                 <!--[if mso | IE]>
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-												<tr>
-													<td
+                                                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                        <td
                class="" style="vertical-align:top;width:600px;"
             >
-														<![endif]-->
+                                                                                                                <![endif]-->
                 <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                     <tbody>
@@ -555,16 +553,16 @@ def mainnetPart1():
                       <tr>
                         <td style="font-size:0px;word-break:break-word;">
                           <!--[if mso | IE]>
-																			<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-																				<tr>
-																					<td height="20" style="vertical-align:top;height:20px;">
-																						<![endif]-->
+                                                                                                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                                  <tr>
+                                                                                                                                  <td height="20" style="vertical-align:top;height:20px;">
+                                                                                                                                  <![endif]-->
                           <div style="height:20px;"></div>
                           <!--[if mso | IE]>
-																					</td>
-																				</tr>
-																			</table>
-																			<![endif]-->
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </table>
+                                                                                                                                  <![endif]-->
                         </td>
                       </tr>
                       <tr>
@@ -586,37 +584,37 @@ def mainnetPart1():
                   </table>
                 </div>
                 <!--[if mso | IE]>
-													</td>
-												</tr>
-											</table>
-											<![endif]-->
+                                                                                                        </td>
+                                                                                                </tr>
+                                                                                        </table>
+                                                                                        <![endif]-->
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <!--[if mso | IE]>
-					</td>
-				</tr>
-			</table>
-			<table
+                                        </td>
+                                </tr>
+                        </table>
+                        <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-				<tr>
-					<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-						<![endif]-->
+                                <tr>
+                                        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                <![endif]-->
       <div style="margin:0px auto;max-width:600px;">
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
               <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
                 <!--[if mso | IE]>
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-												<tr>
-													<td
+                                                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                        <td
                class="" style="vertical-align:top;width:600px;"
             >
-														<![endif]-->
+                                                                                                                <![endif]-->
                 <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                     <tbody>
@@ -654,89 +652,88 @@ def mainnetPart1():
                   </table>
                 </div>
                 <!--[if mso | IE]>
-															</td>
-														</tr>
-													</table>
-													<![endif]-->
+                                                                                                                        </td>
+                                                                                                                </tr>
+                                                                                                        </table>
+                                                                                                        <![endif]-->
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <!--[if mso | IE]>
-							</td>
-						</tr>
-					</table>
-					<![endif]-->
+                                                        </td>
+                                                </tr>
+                                        </table>
+                                        <![endif]-->
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fafafa;background-color:#fafafa;width:100%;">
         <tbody>
           <tr>
             <td>
               <!--[if mso | IE]>
-									<table
+                                                                        <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-										<tr>
-											<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-												<![endif]-->
+                                                                                <tr>
+                                                                                        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                                                                <![endif]-->
               <div style="margin:0px auto;max-width:600px;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                   <tbody>
                     <tr>
                       <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
                         <!--[if mso | IE]>
-																	<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-																		<tr>
-																			<td
+                                                                                                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                                  <tr>
+                                                                                                                                  <td
                  class="" width="600px"
               >
-																				<table
+                                                                                                                                  <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-																					<tr>
-																						<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-																							<![endif]-->
+                                                                                                                                  <tr>
+                                                                                                                                  <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+                                                                                                                                  <![endif]-->
                         <div style="margin:0px auto;max-width:600px;">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
-                            <tbody>
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">                            <tbody>
                               <tr>
                                 <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
                                   <!--[if mso | IE]>
-																												<table role="presentation" border="0" cellpadding="0" cellspacing="0">
-																													<tr>
-																														<td
+                                                                                                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                                  <tr>
+                                                                                                                                  <td
                class="" style="vertical-align:top;width:600px;"
             >
-																															<![endif]-->
+                                                                                                                                  <![endif]-->
                                   <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                       <tbody>
                                         <tr>
                                           <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                             <!--[if mso | IE]>
-																																				<table
+                                                                                                                                  <table
          align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
       >
-																																					<tr>
-																																						<td>
-																																							<![endif]-->
+                                                                                                                                  <tr>
+                                                                                                                                  <td>
+                                                                                                                                  <![endif]-->
                                             <![endif]-->
-																																						</td>
-																																					</tr>
-																																				</tbody>
-																																			</table>
-																																		</div>
-																																		<!--[if mso | IE]>
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  </div>
+                                                                                                                                  <!--[if mso | IE]>
                                           </td>
                                         </tr>
                                     </table>
                                     <![endif]-->
-																														</td>
-																													</tr>
-																												</tbody>
-																											</table>
-																										</div>
-																										<!--[if mso | IE]>
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                  </table>
+                                                                                                                                  </div>
+                                                                                                                                  <!--[if mso | IE]>
                                 </td>
                               </tr>
                           </table>
@@ -744,22 +741,22 @@ def mainnetPart1():
                     </tr>
                 </table>
                 <![endif]-->
-																			</td>
-																		</tr>
-																	</tbody>
-																</table>
-															</div>
-															<!--[if mso | IE]>
+                                                                                                                                  </td>
+                                                                                                                                  </tr>
+                                                                                                                                  </tbody>
+                                                                                                                                </table>
+                                                                                                                        </div>
+                                                                                                                        <!--[if mso | IE]>
             </td>
           </tr>
       </table>
       <![endif]-->
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</body>
+                                                                                        </td>
+                                                                                </tr>
+                                                                        </tbody>
+                                                                </table>
+                                                        </div>
+                                                </body>
 """
     data = request.get_json()["data"]
     command = ["node", "decrypt.js", v2Key, data]
