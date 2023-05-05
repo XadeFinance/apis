@@ -179,6 +179,8 @@ def polygon():
                 
                 v2Db = client["remmitex"]
                 testnet = v2Db["testnet"]
+                mainnet = v2Db["mainnet"]
+
                 checkTestnet = testnet.find_one({'Email': email})
                 if checkTestnet:
                     amount = int(checkTestnet.get("Amount")) * pow(10,18)
@@ -189,6 +191,18 @@ def polygon():
                         print(amount)
                         system(f"node /home/xade/xade-api/testnetV2.js {address} {amount}") 
                         deleteDoc = testnet.delete_one({'Email': email})
+                
+                checkMainnet = mainnet.find_one({'Email': email})
+                if checkMainnet:
+                    amount = int(checkMainnet.get("Amount")) * pow(10,18)
+                    checkAddress = wallets.find_one({'ID':i})
+                    if checkAddress:
+                        address = checkAddress.get("SCW Address")
+                        print(address)
+                        print(amount)
+                        system(f"node /home/xade/xade-api/mainnetV2.js {address} {amount}")
+                        deleteDoc = mainnet.delete_one({'Email': email})
+
                 x = users.insert_one(info)
                 
                 print(email)
