@@ -37,7 +37,7 @@ def index():
         return userDetails["Username"],200
 
 @app.route('/uuid')
-def index():
+def uuid():
         try:
                 wallet = str(request.args.get("uuid"))
         except:
