@@ -183,7 +183,7 @@ def polygon():
 
                 checkTestnet = testnet.find_one({'Email': email})
                 if checkTestnet:
-                    amount = float(checkTestnet.get("Amount")) * pow(10,18)
+                    amount = int(float(checkTestnet.get("Amount")) * pow(10,18))
                     checkAddress = wallets.find_one({'ID':i})
                     if checkAddress:
                         address = checkAddress.get("SCW Address")
@@ -194,7 +194,7 @@ def polygon():
                 
                 checkMainnet = mainnet.find_one({'Email': email})
                 if checkMainnet:
-                    amount = float(checkMainnet.get("Amount")) * pow(10,18)
+                    amount = int(float(checkMainnet.get("Amount")) * pow(10,18))
                     checkAddress = wallets.find_one({'ID':i})
                     if checkAddress:
                         address = checkAddress.get("SCW Address")
