@@ -21,10 +21,10 @@ def index():
         database = client["mobile"]
         phones = database["phones"]
         try:
-                phoneDetails = phones.find_one({"Phone Number":str(phone)})
+                phoneDetails = phones.find_one({"Phone Number":int(phone)})
         except:
                 return "Phone Number was not found",404
-        phoneDetails = phones.find_one({"Phone Number":str(phone)})
+        phoneDetails = phones.find_one({"Phone Number":int(phone)})
         if phoneDetails == None:
             return "Phone number was not found",404
         uid = phoneDetails["ID"]
