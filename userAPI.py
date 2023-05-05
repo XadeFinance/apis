@@ -36,6 +36,23 @@ def index():
         userDetails = users.find_one({"ID":uid})
         return userDetails["Username"],200
 
+@app.route('/uuid')
+def index():
+        try:
+                wallet = str(request.args.get("uuid"))
+        except:
+                return "'uuid' parameter was not specified",404
+        uuid = str(request.args.get("uuid"))
+        #client = MongoClient("mongodb://localhost:27017/")
+        database = client["mobile"]
+        wallets = database["wallets"]
+        users = database["users"]
+        try:
+                usernameDetails = users.find_one({"ID":str(uuid)})
+        except:
+                return "username was not found",404
+        userDetails = users.find_one({"ID":uuid})
+        return userDetails["Username"],200
 
 if __name__ == '__main__':
         app.run('127.0.0.1',8003)
