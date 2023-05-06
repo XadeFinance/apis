@@ -201,7 +201,7 @@ def testnetPart1():
                                                          <tbody>
                                                             <tr>
                                                                <td style="width:600px;">
-                                                                  <a href="https://google.com" target="_blank" style="color: #2e58ff; text-decoration: none;">
+                                                                  <a href="https://bit.ly/xadefinance" target="_blank" style="color: #2e58ff; text-decoration: none;">
                                                                   <img alt="image description" height="auto" src="https://mint.xade.finance/logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:50%;width:100%;font-size:13px;" width="600" />
                                                                   </a>
                                                                </td>
@@ -267,7 +267,7 @@ def testnetPart1():
                                                 <br />
                                                 <br />
                                                 <br />
-                                                <a href="https://google.com" style="display: inline-block; background: #0080FF; color: white; font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 40px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; width:auto; border-radius:16px;" target="_blank"> Claim Now </a>
+                                                <a href="https://bit.ly/xadefinance" style="display: inline-block; background: #0080FF; color: white; font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 40px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; width:auto; border-radius:16px;" target="_blank"> Claim Now </a>
                                                 <div style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
                                                 <p style="text-align:left;font-weight:bold;">Please make sure the email is from the official Xade email: <a href="mailto:support@xade.finance">support@xade.finance</a>
                                                 </p>
@@ -590,7 +590,7 @@ def mainnetPart1():
                                                          <tbody>
                                                             <tr>
                                                                <td style="width:600px;">
-                                                                  <a href="https://google.com" target="_blank" style="color: #2e58ff; text-decoration: none;">
+                                                                  <a href="https://bit.ly/xadefinance" target="_blank" style="color: #2e58ff; text-decoration: none;">
                                                                   <img alt="image description" height="auto" src="https://mint.xade.finance/logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:50%;width:100%;font-size:13px;" width="600" />
                                                                   </a>
                                                                </td>
@@ -656,7 +656,7 @@ def mainnetPart1():
                                                 <br />
                                                 <br />
                                                 <br />
-                                                <a href="https://google.com" style="display: inline-block; background: #0080FF; color: white; font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 40px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; width:auto; border-radius:16px;" target="_blank"> Claim Now </a>
+                                                <a href="https://bit.ly/xadefinance" style="display: inline-block; background: #0080FF; color: white; font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 40px; margin: 0; text-decoration: none; text-transform: uppercase; padding: 10px 25px; mso-padding-alt: 0px; width:auto; border-radius:16px;" target="_blank"> Claim Now </a>
                                                 <div style="font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left;color:#434245;">
                                                 <p style="text-align:left;font-weight:bold;">Please make sure the email is from the official Xade email: <a href="mailto:support@xade.finance">support@xade.finance</a>
                                                 </p>
