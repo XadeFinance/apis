@@ -2,11 +2,9 @@ from pymongo import MongoClient
 from flask import Flask,request,abort
 from os import getenv
 from dotenv import load_dotenv
-
 load_dotenv()
 
 connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
-print(connection)
 
 client = MongoClient(connection)
 app = Flask(__name__)
@@ -21,20 +19,14 @@ def index():
         #client = MongoClient("mongodb://localhost:27017/")
         database = client["mobile"]
         wallets = database["wallets"]
-        try:
-                walletDetails = wallets.find_one({"Wallet Address":str(wallet)})
-        except:
-                return "wallet address was not found",404
-        walletDetails = wallets.find_one({"Wallet Address":str(wallet)})
-        if walletDetails == None:
-            return "wallet address was not found",404
-        uid = walletDetails["ID"]
         users = database["users"]
         try:
-                usernameDetails = users.find_one({"ID":uid})
+                userDetails = users.find_one({"SCW Address":str(wallet)})
         except:
-                return "username was not found",404
-        userDetails = users.find_one({"ID":uid})
+                return "wallet address was not found",404
+        userDetails = users.find_one({"SCW Address":str(wallet)})
+        if userDetails == None:
+            return "wallet address was not found",404
         return userDetails["Username"],200
 
 @app.route('/uuid')
@@ -44,7 +36,6 @@ def uuid():
         except:
                 return "'uuid' parameter was not specified",404
         uuid = str(request.args.get("uuid"))
-        #client = MongoClient("mongodb://localhost:27017/")
         database = client["mobile"]
         wallets = database["wallets"]
         users = database["users"]
