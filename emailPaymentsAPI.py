@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from flask import Flask,request,abort
 from os import getenv
 from dotenv import load_dotenv
+
 load_dotenv()
 
 connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
