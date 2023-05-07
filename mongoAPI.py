@@ -4,6 +4,7 @@ from pymongo import MongoClient
 from os import getenv,system
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 connection = f"mongodb://mongoadmin:{getenv('mongoPass')}@localhost:27017"
