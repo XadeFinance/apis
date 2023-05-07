@@ -44,7 +44,7 @@ def uuid():
         except:
                 return "username was not found",404
         userDetails = users.find_one({"ID":uuid})
-        return userDetails["Username"],200
+        return userDetails["SCW Address"],200
 
 if __name__ == '__main__':
         app.run('127.0.0.1',8003)
