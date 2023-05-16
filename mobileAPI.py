@@ -19,11 +19,13 @@ def polygon():
         phone = str(request.args.get("phone"))
         database = client["mobile"]
         users = database["users"]
+        print(phone)
         try:
-                userDetails = users.find_one({"Phone":int(phone)})
+                userDetails = users.find_one({"Phone": phone})
         except:
                 return f"User was not found",404
-        userDetails = users.find_one({"Phone":int(phone)})
+        userDetails = users.find_one({"Phone": phone})
+        print(userDetails)
         if userDetails == None:
             return "Phone Number was not found",404
         address = userDetails["SCW Address"]
