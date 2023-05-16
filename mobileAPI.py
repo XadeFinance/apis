@@ -11,30 +11,23 @@ client = MongoClient(connection)
 app = Flask(__name__)
 
 @app.route('/polygon')
-def index():
+def polygon():
         try:
                 phone = str(request.args.get("phone"))
         except:
                 return "'phone' parameter was not specified",404
-        phone = str(request.args.get("phone"))
-        #client = MongoClient("mongodb://localhost:27017/")
+        phone = str(request.args.get("email"))
         database = client["mobile"]
-        phones = database["phones"]
+        users = database["users"]
         try:
-                phoneDetails = phones.find_one({"Phone Number":int(phone)})
+                userDetails = users.find_one({"Phone":int(phone)})
         except:
-                return "Phone Number was not found",404
-        phoneDetails = phones.find_one({"Phone Number":int(phone)})
-        if phoneDetails == None:
-            return "Phone number was not found",404
-        uid = phoneDetails["ID"]
-        wallets = database["wallets"]
-        try:
-                walletDetails = wallets.find_one({"ID":uid})
-        except:
-                return "Wallet Address was not found",404
-        walletDetails = wallets.find_one({"ID":uid})
-        return walletDetails["Wallet Address"],200
+                return f"Phone Number was not found",404
+        userDetails = users.find_one({"Phone":int(phone)})
+        if userDetails == None:
+            return "Phone Number was not found",404
+        address = userDetails["SCW Address"]
+        return address,200
 
 if __name__ == '__main__':
         app.run('127.0.0.1',8002)
