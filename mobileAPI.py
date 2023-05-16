@@ -16,7 +16,7 @@ def polygon():
                 phone = str(request.args.get("phone"))
         except:
                 return "'phone' parameter was not specified",404
-        phone = str(request.args.get("email"))
+        phone = str(request.args.get("phone"))
         database = client["mobile"]
         users = database["users"]
         try:
