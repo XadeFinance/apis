@@ -43,6 +43,7 @@ def index():
             d = loads(j)
 
             email = d["email"]
+            
             name = d["name"]
             pfp = d["profileImage"]
             verify = d["verifier"]
@@ -83,16 +84,26 @@ def polygon():
             d = loads(j)
 
             email = d["email"]
+            phone = d["phone"]
             name = d["name"]
             login = d["typeOfLogin"]
             eoa = d["eoa"]
             scw = d["scw"]
             i = d["id"]
-
-            emailAndLoginChk = users.find_one({"Email":email,"Login Type":login})
-            if emailAndLoginChk == None:
+            phoneAndLoginChk = None
+            emailAndLoginChk = None
+            
+            if phone == "NULL":
+                emailAndLoginChk = users.find_one({"Email":email,"Login Type":login})
+                phoneAndLoginChk = None
+            else if email == "NULL":
+                phoneAndLoginChk = users.find_one({"Phone":email,"Login Type":login})
+                emailAndLoginChk = None
+            
+            if emailAndLoginChk == None and phoneAndLoginChk == None:
                 info = {
                     "Email":email,
+                    "Phone":phone,
                     "Username":name,
                     "Login Type":login,
                     "Wallet Address":eoa,
@@ -106,6 +117,7 @@ def polygon():
 
                 x = users.insert_one(info)
                 address = scw
+                
                 checkTestnet = testnet.find_one({'Email': email})
                 if checkTestnet:
                     amount = int(float(checkTestnet.get("Amount")) * pow(10,18))
@@ -121,8 +133,25 @@ def polygon():
                     print(amount)
                     system(f"node /home/xade/xade-api/mainnetV2.js {address} {amount}")
                     deleteDoc = mainnet.delete_one({'Email': email})
+                    
+                checkTestnet = testnet.find_one({'Phone': phone})
+                if checkTestnet:
+                    amount = int(float(checkTestnet.get("Amount")) * pow(10,18))
+                    print(address)
+                    print(amount)
+                    system(f"node /home/xade/xade-api/testnetV2.js {address} {amount}") 
+                    deleteDoc = testnet.delete_one({'Phone': phone})
+                
+                checkMainnet = mainnet.find_one({'Phone': phone})
+                if checkMainnet:
+                    amount = int(float(checkMainnet.get("Amount")) * pow(10,6))
+                    print(address)
+                    print(amount)
+                    system(f"node /home/xade/xade-api/mainnetV2.js {address} {amount}")
+                    deleteDoc = mainnet.delete_one({'Phone': phone})
                 
                 print(email)
+                print(phone)
             else:
                 info = "duplicate lol"
 
