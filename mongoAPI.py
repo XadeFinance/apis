@@ -96,7 +96,7 @@ def polygon():
             if phone == "NULL":
                 emailAndLoginChk = users.find_one({"Email":email,"Login Type":login})
                 phoneAndLoginChk = None
-            else if email == "NULL":
+            elif email == "NULL":
                 phoneAndLoginChk = users.find_one({"Phone":phone,"Login Type":login})
                 emailAndLoginChk = None
             
