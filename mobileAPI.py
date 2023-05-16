@@ -22,7 +22,7 @@ def polygon():
         try:
                 userDetails = users.find_one({"Phone":int(phone)})
         except:
-                return f"Phone Number was not found",404
+                return f"User was not found",404
         userDetails = users.find_one({"Phone":int(phone)})
         if userDetails == None:
             return "Phone Number was not found",404
