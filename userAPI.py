@@ -46,5 +46,24 @@ def uuid():
         userDetails = users.find_one({"ID":uuid})
         return userDetails["SCW Address"],200
 
+@app.route('/email')
+def email():
+        try:
+                address = str(request.args.get("address"))
+        except:
+                return "'address' parameter was not specified",404
+        address = str(request.args.get("address"))
+        database = client["mobile"]
+        users = database["users"]
+        try:
+                userDetails = users.find_one({"SCW Address":str(address)})
+        except:
+                return f"Wallet Address was not found",404
+        userDetails = users.find_one({"SCW Address":str(address)})
+        if userDetails == None:
+            return "Email Address was not found",404
+        email = userDetails["Email"]
+        return email,200
+
 if __name__ == '__main__':
         app.run('127.0.0.1',8003)
