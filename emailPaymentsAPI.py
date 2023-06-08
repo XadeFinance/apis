@@ -56,7 +56,7 @@ def polygon():
         return address,200
 
 @app.route('/polygonemail')
-def polygonGetEmail():
+def polygonEmail():
         try:
                 address = str(request.args.get("address"))
         except:
