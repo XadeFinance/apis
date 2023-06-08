@@ -55,25 +55,6 @@ def polygon():
         address = userDetails["SCW Address"]
         return address,200
 
-@app.route('/polygonemail')
-def polygonEmail():
-        try:
-                address = str(request.args.get("address"))
-        except:
-                return "'address' parameter was not specified",404
-        address = str(request.args.get("address"))
-        database = client["mobile"]
-        users = database["users"]
-        try:
-                userDetails = users.find_one({"Wallet Address":str(address)})
-        except:
-                return f"Wallet Address was not found",404
-        userDetails = users.find_one({"Wallet Address":str(address)})
-        if userDetails == None:
-            return "Email Address was not found",404
-        email = userDetails["Email"]
-        return email,200
-
 @app.route('/polygonlogintype')
 def polygonLogintype():
         try:
