@@ -65,5 +65,20 @@ def email():
         email = userDetails["Email"]
         return email,200
 
+@app.route('/mercleAPI')
+def mercle():
+        try:
+                address = str(request.args.get("address"))
+        except:
+                return "'address' parameter was not specified",404
+        address = str(request.args.get("address"))
+        database = client["mobile"]
+        users = database["users"]
+        try:
+                userDetails = users.find_one({"SCW Address":str(address)})
+                return True, 200
+        except:
+                return False,404
+
 if __name__ == '__main__':
         app.run('127.0.0.1',8003)
