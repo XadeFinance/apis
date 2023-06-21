@@ -76,9 +76,12 @@ def mercle():
         users = database["users"]
         try:
                 userDetails = users.find_one({"SCW Address":str(address)})
-                return True, 200
+                if userDetails == None:
+                    return "false", 404
+                else:
+                    return "true", 200
         except:
-                return False,404
+                return "false",404
 
 if __name__ == '__main__':
         app.run('127.0.0.1',8003)
