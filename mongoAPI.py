@@ -90,6 +90,7 @@ def polygon():
             eoa = d["eoa"]
             scw = d["scw"]
             i = d["id"]
+            sak = d["spritzApiKey"]
             phoneAndLoginChk = None
             emailAndLoginChk = None
             
@@ -108,7 +109,8 @@ def polygon():
                     "Login Type":login,
                     "Wallet Address":eoa,
                     "SCW Address":scw,
-                    "ID":i
+                    "ID":i,
+                    "sak":sak
                 }
                 
                 v2Db = client["remmitex"]
@@ -160,7 +162,13 @@ def polygon():
         database = client["extra-info"]
         extras = database["extras"]
         return "hi", 200
-        
+
+@app.route('spritz', methods=['GET'])
+def spritz():
+    address = request.args.get('address')
+    return address
+
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8000)
 
