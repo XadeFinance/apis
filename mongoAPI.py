@@ -165,7 +165,27 @@ def polygon():
 
 @app.route('spritz', methods=['GET'])
 def spritz():
+    database = client["xade"]
+    users = database["users"]
+    wallets = database["wallets"]
+    phones = database["phones"]
     address = request.args.get('address')
+    
+    database = client["xade"]
+    users = database["users"]
+    users.findOne({'Wallet Address':address, (err, document) => {
+    if (err) {
+      console.error('Error finding document:', err);
+      return;
+    }
+
+    // Print the matching document
+    console.log('Matching document:', document);
+
+    // Close the MongoDB connection
+    # client.close();
+  });
+    
     return address
 
 
